@@ -12,6 +12,8 @@
 		694C61492305DD63006766E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C61472305DD63006766E2 /* Main.storyboard */; };
 		694C614B2305DD66006766E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C614A2305DD66006766E2 /* Assets.xcassets */; };
 		694C614E2305DD66006766E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C614C2305DD66006766E2 /* LaunchScreen.storyboard */; };
+		69E5C87A230B1258000B93EE /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E5C879230B1258000B93EE /* PhotoInfo.swift */; };
+		69E5C87D230B2544000B93EE /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E5C87C230B2544000B93EE /* URL+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		694C614A2305DD66006766E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694C614D2305DD66006766E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694C614F2305DD66006766E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E5C879230B1258000B93EE /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		69E5C87C230B2544000B93EE /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		694C61422305DD63006766E2 /* HTTP Session */ = {
 			isa = PBXGroup;
 			children = (
+				69E5C87B230B251C000B93EE /* Extensions */,
+				69E5C878230B1243000B93EE /* Model */,
 				694C61432305DD63006766E2 /* AppDelegate.swift */,
 				694C61452305DD63006766E2 /* ViewController.swift */,
 				694C61472305DD63006766E2 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				694C614F2305DD66006766E2 /* Info.plist */,
 			);
 			path = "HTTP Session";
+			sourceTree = "<group>";
+		};
+		69E5C878230B1243000B93EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69E5C879230B1258000B93EE /* PhotoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69E5C87B230B251C000B93EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				69E5C87C230B2544000B93EE /* URL+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E5C87A230B1258000B93EE /* PhotoInfo.swift in Sources */,
+				69E5C87D230B2544000B93EE /* URL+Extension.swift in Sources */,
 				694C61462305DD63006766E2 /* ViewController.swift in Sources */,
 				694C61442305DD63006766E2 /* AppDelegate.swift in Sources */,
 			);
