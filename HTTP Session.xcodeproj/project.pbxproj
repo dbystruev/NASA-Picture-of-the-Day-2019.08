@@ -12,6 +12,7 @@
 		694C61492305DD63006766E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C61472305DD63006766E2 /* Main.storyboard */; };
 		694C614B2305DD66006766E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C614A2305DD66006766E2 /* Assets.xcassets */; };
 		694C614E2305DD66006766E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C614C2305DD66006766E2 /* LaunchScreen.storyboard */; };
+		69971984252752D800888B1F /* Screenshots.png in Resources */ = {isa = PBXBuildFile; fileRef = 69971983252752D800888B1F /* Screenshots.png */; };
 		69E5C87A230B1258000B93EE /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E5C879230B1258000B93EE /* PhotoInfo.swift */; };
 		69E5C87D230B2544000B93EE /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E5C87C230B2544000B93EE /* URL+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		694C614A2305DD66006766E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694C614D2305DD66006766E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694C614F2305DD66006766E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69971983252752D800888B1F /* Screenshots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshots.png; sourceTree = "<group>"; };
 		69E5C879230B1258000B93EE /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		69E5C87C230B2544000B93EE /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,16 +60,25 @@
 		694C61422305DD63006766E2 /* HTTP Session */ = {
 			isa = PBXGroup;
 			children = (
-				69E5C87B230B251C000B93EE /* Extensions */,
-				69E5C878230B1243000B93EE /* Model */,
 				694C61432305DD63006766E2 /* AppDelegate.swift */,
-				694C61452305DD63006766E2 /* ViewController.swift */,
-				694C61472305DD63006766E2 /* Main.storyboard */,
 				694C614A2305DD66006766E2 /* Assets.xcassets */,
-				694C614C2305DD66006766E2 /* LaunchScreen.storyboard */,
+				69E5C87B230B251C000B93EE /* Extensions */,
 				694C614F2305DD66006766E2 /* Info.plist */,
+				694C614C2305DD66006766E2 /* LaunchScreen.storyboard */,
+				694C61472305DD63006766E2 /* Main.storyboard */,
+				69E5C878230B1243000B93EE /* Model */,
+				69971982252752C200888B1F /* Screenshots */,
+				694C61452305DD63006766E2 /* ViewController.swift */,
 			);
 			path = "HTTP Session";
+			sourceTree = "<group>";
+		};
+		69971982252752C200888B1F /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				69971983252752D800888B1F /* Screenshots.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		69E5C878230B1243000B93EE /* Model */ = {
@@ -113,7 +124,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Denis Bystruev";
 				TargetAttributes = {
 					694C613F2305DD63006766E2 = {
@@ -147,6 +158,7 @@
 				694C614E2305DD66006766E2 /* LaunchScreen.storyboard in Resources */,
 				694C614B2305DD66006766E2 /* Assets.xcassets in Resources */,
 				694C61492305DD63006766E2 /* Main.storyboard in Resources */,
+				69971984252752D800888B1F /* Screenshots.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +224,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -273,6 +286,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -313,7 +327,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.HTTP-Session";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.m-d-a.nasapod";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,7 +345,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.HTTP-Session";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.m-d-a.nasapod";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
